@@ -1,0 +1,247 @@
+//visibility pictures
+document.getElementById("close").onclick=function(){
+    document.getElementById("imgs").style.visibility="hidden";
+}
+document.getElementById("img1").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_01.jpg");
+}
+document.getElementById("img2").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_02.jpg");
+}
+document.getElementById("img3").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_03.jpg");
+}
+document.getElementById("img4").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_04.jpg");
+}
+document.getElementById("img5").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_05.jpg");
+}
+document.getElementById("img6").onclick=function(){
+    document.getElementById("imgs").style.visibility="visible";
+    document.getElementById("img").setAttribute("src","img/portfolio_big_item_06.jpg");
+}
+
+//Order pictures
+document.getElementById("li1").onclick=function(){
+    document.getElementById("img1").style.display="block";
+    document.getElementById("img2").style.display="block";
+    document.getElementById("img3").style.display="block";
+    document.getElementById("img4").style.display="block";
+    document.getElementById("img5").style.display="block";
+    document.getElementById("img6").style.display="block";
+    document.getElementById("li1").style.color="#ff7582";
+    document.getElementById("li2").style.color="#ededed";
+    document.getElementById("li3").style.color="#ededed";
+    document.getElementById("li4").style.color="#ededed";
+    document.getElementById("li5").style.color="#ededed";
+}
+document.getElementById("li2").onclick=function(){
+    document.getElementById("img1").style.display="none";
+    document.getElementById("img2").style.display="none";
+    document.getElementById("img3").style.display="block";
+    document.getElementById("img4").style.display="none";
+    document.getElementById("img5").style.display="block";
+    document.getElementById("img6").style.display="none";
+    document.getElementById("li1").style.color="#ededed";
+    document.getElementById("li2").style.color="#ff7582";
+    document.getElementById("li3").style.color="#ededed";
+    document.getElementById("li4").style.color="#ededed";
+    document.getElementById("li5").style.color="#ededed";
+}
+document.getElementById("li3").onclick=function(){
+    document.getElementById("img1").style.display="none";
+    document.getElementById("img2").style.display="none";
+    document.getElementById("img3").style.display="none";
+    document.getElementById("img4").style.display="block";
+    document.getElementById("img5").style.display="none";
+    document.getElementById("img6").style.display="block";
+    document.getElementById("li1").style.color="#ededed";
+    document.getElementById("li2").style.color="#ededed";
+    document.getElementById("li3").style.color="#ff7582";
+    document.getElementById("li4").style.color="#ededed";
+    document.getElementById("li5").style.color="#ededed";
+}
+document.getElementById("li4").onclick=function(){
+    document.getElementById("img1").style.display="block";
+    document.getElementById("img2").style.display="none";
+    document.getElementById("img3").style.display="none";
+    document.getElementById("img4").style.display="block";
+    document.getElementById("img5").style.display="none";
+    document.getElementById("img6").style.display="none";
+    document.getElementById("li1").style.color="#ededed";
+    document.getElementById("li2").style.color="#ededed";
+    document.getElementById("li3").style.color="#ededed";
+    document.getElementById("li4").style.color="#ff7582";
+    document.getElementById("li5").style.color="#ededed";
+}
+document.getElementById("li5").onclick=function(){
+    document.getElementById("img1").style.display="none";
+    document.getElementById("img2").style.display="block";
+    document.getElementById("img3").style.display="none";
+    document.getElementById("img4").style.display="none";
+    document.getElementById("img5").style.display="none";
+    document.getElementById("img6").style.display="block";
+    document.getElementById("li1").style.color="#ededed";
+    document.getElementById("li2").style.color="#ededed";
+    document.getElementById("li3").style.color="#ededed";
+    document.getElementById("li4").style.color="#ededed";
+    document.getElementById("li5").style.color="#ff7582";
+}
+
+//Visibility picture
+document.getElementById("a1").onclick=function(){
+    document.getElementById("pic1").style.opacity="1";
+    document.getElementById("pic2").style.opacity="0";
+    document.getElementById("pic3").style.opacity="0";
+    document.getElementById("pic4").style.opacity="0";
+    document.getElementById("a1").style.color="#ff7582";
+    document.getElementById("a2").style.color="#000";
+    document.getElementById("a3").style.color="#000";
+    document.getElementById("a4").style.color="#000";
+}
+document.getElementById("a2").onclick=function(){
+    document.getElementById("pic1").style.opacity="0";
+    document.getElementById("pic2").style.opacity="1";
+    document.getElementById("pic3").style.opacity="0";
+    document.getElementById("pic4").style.opacity="0";
+    document.getElementById("a1").style.color="#000";
+    document.getElementById("a2").style.color="#ff7582";
+    document.getElementById("a3").style.color="#000";
+    document.getElementById("a4").style.color="#000";
+}
+document.getElementById("a3").onclick=function(){
+    document.getElementById("pic1").style.opacity="0";
+    document.getElementById("pic2").style.opacity="0";
+    document.getElementById("pic3").style.opacity="1";
+    document.getElementById("pic4").style.opacity="0";
+    document.getElementById("a1").style.color="#000";
+    document.getElementById("a2").style.color="#000";
+    document.getElementById("a3").style.color="#ff7582";
+    document.getElementById("a4").style.color="#000";
+}
+document.getElementById("a4").onclick=function(){
+    document.getElementById("pic1").style.opacity="0";
+    document.getElementById("pic2").style.opacity="0";
+    document.getElementById("pic3").style.opacity="0";
+    document.getElementById("pic4").style.opacity="1";
+    document.getElementById("a1").style.color="#000";
+    document.getElementById("a2").style.color="#000";
+    document.getElementById("a3").style.color="#000";
+    document.getElementById("a4").style.color="#ff7582";
+}
+
+//Change checkbox
+document.getElementById("rd1").onchange=function(){
+    if(document.getElementById("rd1").checked){
+        document.getElementById("list").style.left="0%";
+    }
+}
+document.getElementById("rd2").onchange=function(){
+    if(document.getElementById("rd2").checked){
+        document.getElementById("list").style.left="-100%";
+    }
+}
+document.getElementById("rd3").onchange=function(){
+    if(document.getElementById("rd3").checked){
+        document.getElementById("list").style.left="-200%";
+    }
+}
+document.getElementById("rd4").onchange=function(){
+    if(document.getElementById("rd4").checked){
+        document.getElementById("list").style.left="-300%";
+    }
+}
+
+//Contact
+document.getElementById("btn-close-contact").onclick=function(){
+    document.getElementById("contact-content").style.display="none";
+}
+document.getElementById("btn-open-contact").onclick=function(){
+    document.getElementById("contact-content").style.display="block";
+}
+
+//Saying
+let numbers=["0%","-100%","-200%","-300%"];
+var i=0;
+setInterval(timer,3000);
+function timer(){
+    i=i+1;
+    if(i==1){
+        document.getElementById("rd2").checked=true;
+    }
+    if(i==2){
+        document.getElementById("rd3").checked=true;
+    }
+    if(i==3){
+        document.getElementById("rd4").checked=true;
+    }
+    if(i==4){
+        i=0;
+        document.getElementById("rd1").checked=true;
+    }
+    document.getElementById("list").style.left=numbers[i];
+}
+
+//Side-bar
+if(this.scrollY<600){
+    document.getElementById("A").style.color="#2fbdff";
+}
+onscroll=function(){
+    if(scrollY>600){
+        document.getElementById("A").style.color="#000";
+        document.getElementById("B").style.color="#2fbdff";
+        document.getElementById("C").style.color="#000";
+        document.getElementById("D").style.color="#000";
+        document.getElementById("E").style.color="#000";
+        document.getElementById("side-bar").style.backgroundColor="#ededed";
+        document.getElementById("side-bar").style.position="fixed";
+        this.document.getElementById("title").style.color="#000";
+    }
+    if(scrollY>1200){
+        document.getElementById("A").style.color="#000";
+        document.getElementById("B").style.color="#000";
+        document.getElementById("C").style.color="#2fbdff";
+        document.getElementById("D").style.color="#000";
+        document.getElementById("E").style.color="#000";
+    }
+    if(scrollY>2200){
+        document.getElementById("A").style.color="#000";
+        document.getElementById("B").style.color="#000";
+        document.getElementById("C").style.color="#000";
+        document.getElementById("D").style.color="#2fbdff";
+        document.getElementById("E").style.color="#000";
+    }
+    if(scrollY>2800){
+        document.getElementById("A").style.color="#000";
+        document.getElementById("B").style.color="#000";
+        document.getElementById("C").style.color="#000";
+        document.getElementById("D").style.color="#000";
+        document.getElementById("E").style.color="#2fbdff";
+    }
+    if(scrollY<600){
+        document.getElementById("A").style.color="#00abf0";
+        document.getElementById("B").style.color="#000";
+        document.getElementById("C").style.color="#000";
+        document.getElementById("D").style.color="#000";
+        document.getElementById("E").style.color="#000";
+        document.getElementById("side-bar").style.backgroundColor="#ededed";
+        this.document.getElementById("title").style.color="#000";
+    }
+}
+//Menu
+document.getElementById("btn-menu").onclick=function(){
+    if(document.getElementById("menu").style.transform=="translateY(-100%)"){
+        document.getElementById("menu").style.transform="translateY(0%)";
+        document.getElementById("menu").style.visibility="visible";
+    }
+    else{
+        document.getElementById("menu").style.transform="translateY(-100%)";
+        document.getElementById("menu").style.visibility="hidden";
+    }
+}
